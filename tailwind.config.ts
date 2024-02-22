@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        sky500:'#00BFFF',
+        greenHydra: '#008751'
+      }
     },
   },
   plugins: [],
