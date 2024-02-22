@@ -1,12 +1,18 @@
 "use client"
-import {motion, useScroll} from 'framer-motion'
+import {motion, useInView, useScroll} from 'framer-motion'
 import { Brain } from '../components/Brain'
 import { useRef } from 'react'
 
 export default function AboutPage () {
     const containerRef = useRef<HTMLDivElement>(null)
+    
     const {scrollYProgress} =useScroll({container:containerRef})
 
+    const skillRef = useRef<HTMLDivElement>(null)
+    const isSkillRefInView = useInView(skillRef, {margin:"-100px" })
+
+    const experienceRef = useRef<HTMLDivElement>(null)
+    const isExperienceRefInView = useInView(experienceRef, {margin:"-100px" })
     
     return (
         <motion.div
@@ -40,53 +46,90 @@ export default function AboutPage () {
             <div className='self-end'></div>
             {/* SCROLL SVG  */}
             
-            {/* <svg viewBox='0 0 24 24 '
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width={50}
-            height={50}
+            <motion.svg
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: 1, y: "10px" }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width={50}
+              height={50}
             >
-            <path
-            d="M5 16.8565 5.73754 18.6371 7.05029 "
-            stroke='black'
-            strokeWidth="2"
-            >
-
-            </path>
-            </svg>*/}
+              <path
+                d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+              <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+              <path
+                d="M15 11L12 14L9 11"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+            </motion.svg>
+            
             </div>
             {/* Habilidades CONTAINER */}
-            <div className='flex flex-col gap-12 justify-center'>
+            <div className='flex flex-col gap-12 justify-center' ref={skillRef}>
             {/* TITULO DE HABILIDADES  */}
-            <h1 className='font-bold text-2xl'>Habilidades</h1>
+            <motion.h1 
+            initial={{x:"-300px"}} 
+            animate={isSkillRefInView ? {x:0} : {}}
+            transition={{delay:0.2}}
+            className='font-bold text-2xl'>Habilidades</motion.h1>
             {/* SKILL LIST  */}
-            <div className=' flex gap-4 flex-wrap'>
+            <motion.div 
+            initial={{x:"-300px"}} 
+            animate={isSkillRefInView ? {x:0} : {}} 
+            transition={{delay:0.4}}
+            className=' flex gap-4 flex-wrap'>
             <div className='rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>bla bla</div>
-            </div>
+            </motion.div>
             {/* SKILL SCROLL SVG  */}
             
-            {/* <svg viewBox='0 0 24 24 '
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width={50}
-            height={50}
+            <motion.svg
+              initial={{ opacity: 0.2, y: 0 }}
+              animate={{ opacity: 1, y: "10px" }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width={50}
+              height={50}
             >
-            <path
-            d="M5 16.8565 5.73754 18.6371 7.05029 "
-            stroke='black'
-            strokeWidth="2"
-            >
+              <path
+                d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+              <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+              <path
+                d="M15 11L12 14L9 11"
+                stroke="#000000"
+                strokeWidth="1"
+              ></path>
+            </motion.svg>
 
-            </path>
-            </svg>*/}
             </div>
             {/* Experiência CONTAINER */}
-            <div className='flex flex-col gap-12 justify-center pb-48 '>
-            <h1 className='font-bold text-2xl'>Experiências</h1>
+            <motion.div className='flex flex-col gap-12 justify-center pb-48 ' ref={experienceRef}>
+            <motion.h1 
+            initial={{x:"-300px"}} 
+            animate={isExperienceRefInView ? {x:"0"} : {}} 
+            transition={{delay:0.2}} 
+            className='font-bold text-2xl'>
+            Experiências
+            </motion.h1>
             {/* Experiência List */}
-            <div className=''>
+            <motion.div  
+            initial={{x:"-300px"}} 
+            animate={isExperienceRefInView ? {x:"0"} : {}}  className=''>
             {/* Experiência List item*/}
-            <div className='flex justify-between h-48 lg:h-64'>
+            <motion.div 
+            initial={{x:"-300px"}} 
+            animate={isExperienceRefInView ? {x:"0"} : {}}
+            className='flex justify-between h-48 lg:h-64'>
             {/* Left */}
             <div className='w-1/3 '>
             {/* Title ... */}
@@ -112,7 +155,7 @@ export default function AboutPage () {
             <div className='w-1/3 '>
             
             </div>
-            </div>
+            </motion.div>
 
             <div className='flex justify-between h-48'>
             {/* Left */}
@@ -169,8 +212,8 @@ export default function AboutPage () {
             </div>
             </div>
 
-            </div>
-            </div>
+            </motion.div>
+            </motion.div>
 
             
             </div>
