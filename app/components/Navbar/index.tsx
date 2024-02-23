@@ -7,11 +7,12 @@ import { NavLink } from '../NavLink';
 import {motion} from 'framer-motion'
 
 
-const links= [
+    const links= [
     {url: '/', title: "Home"},
     {url: '/about', title: "About"},
     {url: '/servicos', title: "Servicos"},
-    {url: '/We', title: 'Nós'}
+    {url: '/contact', title: "contact"},
+    
 ]
 export function NavBar () {
     const [open, setOpen] = useState(false);

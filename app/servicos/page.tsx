@@ -12,7 +12,7 @@ const items = [
       title: "React Commerce",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      link: "",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const items = [
       title: "Next.js Medium Blog",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      link: "",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const items = [
       title: "Vanilla Book App",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      link: "",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const items = [
       title: "Spotify Music App",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
       img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      link: "https://lama.dev",
+      link: "",
     },
   ];
 
@@ -54,7 +54,10 @@ export default function Servicos () {
         transition={{}}
         className="">
         <div className='h-[600vh] relative' ref={ref}>
-        <div className='w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center'>Nosso trabalho</div>
+        <div className='w-screen h-[calc(100vh-6rem)] flex items-center justify-center  text-8xl text-center'>
+          <h1 className='text-6xl font-semibold '>Nosso trabalho</h1>
+          
+          </div>
         <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
           <motion.div style={{ x }} className='flex'>
           <div className='h-screen w-screen flex items-center justify-center bg-gradient-to-r from-emerald-300 to-blue-200' />
@@ -76,7 +79,7 @@ export default function Servicos () {
             </div>
         </div>
             <div className='w-screen h-screen flex flex-col gap-16 items-center justify-center text-center mt-36'>
-              <h1 className='text-8xl '>Você tem algum projeto?</h1>
+              <h1 className='text-6xl  '>Você tem algum projeto?</h1>
               <div className='relative '>
               <motion.svg
             animate={{ rotate: 360 }}
@@ -96,7 +99,9 @@ export default function Servicos () {
               </textPath>
             </text>
           </motion.svg>
-          <Link href="/contact" className='w-16 h-16 md:w-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center'>Testando as coisas</Link>
+          <Link href="/contact" className='w-16 h-16 md:w-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center'>
+            Hydra
+            </Link>
               </div>
             </div>
         
