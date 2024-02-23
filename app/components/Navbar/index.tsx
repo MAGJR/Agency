@@ -10,7 +10,7 @@ import {motion} from 'framer-motion'
 const links= [
     {url: '/', title: "Home"},
     {url: '/about', title: "About"},
-    {url: '/contact', title: "Contact"},
+    {url: '/servicos', title: "Servicos"},
     {url: '/We', title: 'Nós'}
 ]
 export function NavBar () {

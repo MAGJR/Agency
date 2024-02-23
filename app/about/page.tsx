@@ -68,6 +68,7 @@ export default function AboutPage () {
                 strokeWidth="1"
               ></path>
             </motion.svg>
+
             
             </div>
             {/* Habilidades CONTAINER */}
