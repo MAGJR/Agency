@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 
 export default function ContactPage () {
-    const text ="Say Hello "
+    const text ="Say Hello😊 "
     const [sucess, setSucess] = useState(false)
     const [error, setError] = useState(false)
 
@@ -59,15 +59,15 @@ export default function ContactPage () {
                 {letter}
                 </motion.span>
             ))}
-            😊
+            
             </div>
         </div>
         {/* FORM CONTAINER */}
         <form 
         onSubmit={sendEmail}
         ref={form} 
-        className='h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-10'>
-            <span>Dear Hydra,</span>
+        className='h-1/2 lg:h-full lg:w-1/2  rounded-xl text-xl flex flex-col gap-8 justify-center p-10'>
+            <span className=''>Dear Hydra,</span>
             <textarea 
             placeholder="digite sua mensagem" 
             rows={6} 

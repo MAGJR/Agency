@@ -220,7 +220,7 @@ export default function AboutPage () {
             </div>
             {/* SVG CONTAINER */}
             
-            <div className='hidden lg:block sticky top-0 z-30 w-1/3 xl:1/2 '>
+            <div className='hidden lg:block sticky top-0 z-30 w-1/3 xl:1/2 lg:ml-60'>
 
             <Brain scrollYProgress={scrollYProgress}></Brain>
             </div>
