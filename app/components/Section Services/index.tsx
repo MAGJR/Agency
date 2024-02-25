@@ -11,6 +11,7 @@ export function SectionServices () {
        h-full 
        mt-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
         <div className="container mx-auto px-4">
+        <h1 className='items-center justify-center text-center mb-6 text-6xl'>titulo</h1>
         <div className="grid md:grid-cols-3 gap-8">
       
       {/* CARD 1*/}

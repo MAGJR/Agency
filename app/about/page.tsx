@@ -31,7 +31,7 @@ export default function AboutPage () {
             {/* O QUE FAZEMOS CONTAINER */}
             <div className='flex flex-col gap-12 justify-center'>
             {/* TITULO O QUE FAZEMOS  */}
-            <h1 className='font-bold text-2xl'>O que fazemos</h1>
+            <h1 className='font-bold text-2xl'>Nossa Filosofia</h1>
             {/* DESCRIÇÃO O QUE FAZEMOS  */}
             <p className='text-lg'>
                 Lorem ipsum dolor sit amet consectetur adipisicing 
@@ -78,7 +78,7 @@ export default function AboutPage () {
             initial={{x:"-300px"}} 
             animate={isSkillRefInView ? {x:0} : {}}
             transition={{delay:0.2}}
-            className='font-bold text-2xl'>Habilidades</motion.h1>
+            className='font-bold text-2xl'>Provas Sociais</motion.h1>
             {/* SKILL LIST  */}
             <motion.div 
             initial={{x:"-300px"}} 
@@ -120,7 +120,7 @@ export default function AboutPage () {
             animate={isExperienceRefInView ? {x:"0"} : {}} 
             transition={{delay:0.2}} 
             className='font-bold text-2xl'>
-            Experiências
+            Metodologia
             </motion.h1>
             {/* Experiência List */}
             <motion.div  

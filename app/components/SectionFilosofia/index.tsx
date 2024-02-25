@@ -7,8 +7,9 @@ export function SectionFilosofia() {
     return (
         <div className=" 
         h-screen 
-        bg-gradient-to-b text-black  from-emerald-100 to-blue-100 
-        px-4 sm:px-8 md:px-12 overflow-x-hidden lg:px-20 xl:px-48 text-center
+        bg-gradient-to-b from-emerald-100 to-blue-100 
+        px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-center
+        flex flex-col items-center justify-center
         "
         
         >
@@ -17,8 +18,8 @@ export function SectionFilosofia() {
             </div>
             <div className="flex flex-wrap justify-center gap-8">
         {/* Strategy */}
-        <div className="max-w-sm">
-          <div className="flex justify-center items-center h-20 w-20 bg-blue-900 text-blue-500 rounded-full ml-40 mb-4 border-2">
+        <div className="max-w-sm flex flex-col items-center">
+          <div className="flex justify-center items-center h-20 w-20 bg-blue-900 rounded-full mb-4 border-2 border-blue-500">
             {/* Placeholder for image */}
           </div>
           <h3 className="text-lg font-semibold text-center mb-2">Strategy</h3>
@@ -28,8 +29,8 @@ export function SectionFilosofia() {
         </div> 
 
         {/* Campaigns */}
-        <div className="max-w-sm">
-          <div className="flex justify-center items-center h-20 w-20  text-blue-500 rounded-full ml-40 mb-4 border-2">
+        <div className="max-w-sm flex flex-col items-center">
+          <div className="flex justify-center items-center h-20 w-20 bg-blue-900 rounded-full mb-4 border-2 border-blue-500">
             {/* Placeholder for image */}
           </div>
           <h3 className="text-lg font-semibold text-center mb-2">Campaigns</h3>
@@ -38,8 +39,8 @@ export function SectionFilosofia() {
           </p>
         </div>
         {/* Results */}
-        <div className="max-w-sm">
-          <div className="flex justify-center items-center h-20 w-20   rounded-full ml-40 mb-4 border-2">
+        <div className="max-w-sm flex flex-col items-center">
+          <div className="flex justify-center items-center h-20 w-20 rounded-full  mb-4 border-2">
             <Image src={funilImg} alt="" />
           </div>
           <h3 className="text-lg font-semibold text-center mb-2">Results</h3>
