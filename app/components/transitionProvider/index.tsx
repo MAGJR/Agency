@@ -1,9 +1,10 @@
 "use client"
-
 import { AnimatePresence} from "framer-motion"
 import {motion} from 'framer-motion'
+
 import { NavBar } from "../Navbar"
 import { usePathname } from "next/navigation"
+
 import React from "react"
 
 type TransitionProviderProps = {

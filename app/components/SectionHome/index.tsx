@@ -1,9 +1,9 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-
 export function SectionHome () {
     const containerRef = useRef<HTMLDivElement>(null)  
+    
     const descriptionRef = useRef<HTMLDivElement>(null)
     const isDescriptionRefInView = useInView(descriptionRef, {margin:"-20px"})   
     
@@ -49,7 +49,7 @@ export function SectionHome () {
         <div className="flex items-center mt-4">
           <p className="text-sm mr-2">Excellent</p>
           <div className="flex lg:ml-80 mt-10">
-            {/* Stars go here, repeating 5 times for 5 stars */}
+            {/* */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -79,12 +79,7 @@ export function SectionHome () {
       </motion.div>
       
       {/* Image container */}
-      <div className="  ">
       
-        <div className="relative h-full">
-          
-        </div>
-      </div>
     </div>
     )
 }

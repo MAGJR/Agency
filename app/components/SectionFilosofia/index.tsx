@@ -6,7 +6,7 @@ import funilImg from "../../../public/funil.webp"
 export function SectionFilosofia() {
     return (
         <div className=" 
-        h-screen w-screen 
+        h-screen 
         bg-gradient-to-b text-black  from-emerald-100 to-blue-100 
         px-4 sm:px-8 md:px-12 overflow-x-hidden lg:px-20 xl:px-48 text-center
         "

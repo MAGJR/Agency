@@ -5,12 +5,14 @@ import HomeImg from '../public/Home.png'
 import {motion} from 'framer-motion'
 import { SectionHome } from "./components/SectionHome";
 import { SectionFilosofia } from "./components/SectionFilosofia";
+import { SectionHydra } from "./components/SectionHydra";
+import { SectionServices } from "./components/Section Services";
 export default function Home() {
  
 
   return (
     <motion.div 
-    className="h-full  " 
+    className="h-full" 
     initial={{y:"-200vh"}} 
     animate={{y:"0%"}} 
     transition={{duration:1}}>
@@ -33,7 +35,7 @@ export default function Home() {
     <button className="p-4 rounded-lg ring-1 ring-black bg-white text-black">Contate</button>
    </div>
    
-   <div className="h-screen w-screen flex items-center justify-center gap-60">
+   <div className="h-screen w-screen flex items-center justify-center ">
    <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -62,6 +64,8 @@ export default function Home() {
   
    <SectionHome />
    <SectionFilosofia />
+   <SectionHydra />
+   <SectionServices />
     </motion.div>
   );
 }
