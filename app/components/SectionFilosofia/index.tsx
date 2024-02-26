@@ -2,53 +2,78 @@
 
 import Image from "next/image"
 import funilImg from "../../../public/funil.webp"
+import {motion, useInView} from "framer-motion"
+import { useRef } from "react"
 
 export function SectionFilosofia() {
+  const containerRef = useRef<HTMLDivElement>(null)  
+    
+    const descriptionRef = useRef<HTMLDivElement>(null)
+    const isDescriptionRefInView = useInView(descriptionRef, {margin:"-150px"})   
     return (
-        <div className=" 
+        <div 
+        ref={containerRef}
+        className=" 
         h-screen 
         bg-gradient-to-b from-emerald-100 to-blue-100 
         px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-center
         flex flex-col items-center justify-center
         "
         
-        >
-            <div className="flex items-center justify-center mt-12 ">
+        >   <div ref={descriptionRef}>
+            <motion.div 
+            initial={{ opacity: 0 }}
+            animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+            transition={{delay: 0.2}}
+            className="flex items-center justify-center mt-12 " >
             <h1 className="font-semibold text-4xl mb-6">Por que seu negócio precisa da Hydra?</h1>
-            </div>
+            </motion.div>
             <div className="flex flex-wrap justify-center gap-8">
         {/* Strategy */}
-        <div className="max-w-sm flex flex-col items-center">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+        transition={{delay: 0.3}}
+        className="max-w-sm flex flex-col items-center">
           <div className="flex justify-center items-center h-20 w-20 bg-blue-900 rounded-full mb-4 border-2 border-blue-500">
             {/* Placeholder for image */}
           </div>
           <h3 className="text-lg font-semibold text-center mb-2">Strategy</h3>
           <p className="text-gray-600 text-center">
-            We analyse the history of your brand and craft a strategy that is in harmony with your brand.
+          Analisamos a história da sua marca e traçamos uma estratégia que esteja em harmonia com a sua marca.
           </p>
-        </div> 
+        </motion.div> 
 
         {/* Campaigns */}
-        <div className="max-w-sm flex flex-col items-center">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+        transition={{delay: 0.4}}
+        className="max-w-sm flex flex-col items-center">
           <div className="flex justify-center items-center h-20 w-20 bg-blue-900 rounded-full mb-4 border-2 border-blue-500">
             {/* Placeholder for image */}
           </div>
           <h3 className="text-lg font-semibold text-center mb-2">Campaigns</h3>
           <p className="text-gray-600 text-center">
-            We create, run, optimize and scale campaigns that sell your product efficiently.
+          Criamos, executamos, otimizamos e dimensionamos campanhas que vendem seu produto com eficiência.
           </p>
-        </div>
+        </motion.div>
         {/* Results */}
-        <div className="max-w-sm flex flex-col items-center">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+        transition={{delay: 0.5}}
+        className="max-w-sm flex flex-col items-center">
           <div className="flex justify-center items-center h-20 w-20 rounded-full  mb-4 border-2">
             <Image src={funilImg} alt="" />
           </div>
-          <h3 className="text-lg font-semibold text-center mb-2">Results</h3>
+          <h3 className="text-lg font-semibold text-center mb-2">Resultados</h3>
           <p className="text-gray-600 text-center">
-            We always strive to achieve a ROI of 4x+ - but we often deliver results far beyond that.
+          Sempre nos esforçamos para alcançar um ROI de 4x+ - mas muitas vezes entregamos resultados muito além disso.
           </p>
-        </div>
+        </motion.div>
 
+        </div>
         </div>
         </div>
     )

@@ -26,6 +26,9 @@ export function SectionHydra () {
         <motion.div
           className="w-full lg:flex-1"
           ref={descriptionRef}
+          initial={{ opacity: 0 }}
+        animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+        transition={{delay: 0.2}}
         >
           <Image
             src={hydrImg}
@@ -45,15 +48,22 @@ export function SectionHydra () {
             transition={{ delay: 0.5 }}
             className="text-2xl font-bold"
           >
-            Diferencial
+            NOSSA FORÇA
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={isDescriptionRefInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.6 }}
           >
-            Seu texto aqui. Este é um exemplo de como você pode posicionar texto e
-            imagem lado a lado usando Flexbox e Tailwind CSS.
+            Oferecemos Segurança Digital, para que as suas ofertas não sejam pirateadas.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={isDescriptionRefInView ? { opacity: 1 } : {}}
+            transition={{ delay: 0.6 }}
+            className="mt-3"
+          >
+            Criamos sistemas saas com Inteligência artifical, além de trazer um sistema único para as suas campanhas para alta performace.
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05 }}
