@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 
 
@@ -54,6 +55,15 @@ export function SectionServices () {
         </div>
         <p>As mídias sociais são ferramentas importantes para aumentar a visibilidade da sua marca e se comunicar com seus clientes...</p>
       </motion.div>
+    </div>
+    <div className='flex items-center justify-center mt-10'>
+      <Link href='/servicos'>
+      <motion.button
+      whileHover={{scale: 1.05}}
+      transition={{ type: "spring", stiffness: 300 }}
+      className='bg-emerald-300 rounded-lg ring-1 font-bold ring-emerald-300 text-black p-4 py-3'>Ver nossos trabalhos
+      </motion.button>
+      </Link>
     </div>
   </div>
        </div>

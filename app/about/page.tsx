@@ -31,16 +31,14 @@ export default function AboutPage () {
             {/* O QUE FAZEMOS CONTAINER */}
             <div className='flex flex-col gap-12 justify-center'>
             {/* TITULO O QUE FAZEMOS  */}
-            <h1 className='font-bold text-2xl'>Nossa Filosofia</h1>
+            <h1 className='font-bold text-2xl'>Filosofia da Hydra</h1>
             {/* DESCRIÇÃO O QUE FAZEMOS  */}
-            <p className='text-lg'>
-                Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit.lorem eveniet.  accusantium 
-                itaque quis amet. Quo, odit.
+            <p className='text-lg italic'>
+            Na  <span className='text-emerald-500'>Hydra Digital</span>, inovamos com responsabilidade e ousadia. Nosso foco é transformar criatividade em resultados concretos, entregando um ROAS excepcional. Somos parceiros na jornada digital, construindo futuros audaciosos e visionários.
             </p>
             {/* FILOSOFIA O QUE FAZEMOS  */}
-            <span className='italic'>
-                Lorem ipsum dolor sit amet consecteconsectetur atque mollitia est porro ali
+            <span className='italic font-serif text-emerald-600'>
+            Por meio do trabalho árduo se moldam as pedras fundamentais de um império duradouro
             </span>
             {/* ASSINATURA O QUE FAZEMOS  */}
             <div className='self-end'></div>
@@ -134,13 +132,13 @@ export default function AboutPage () {
             {/* Left */}
             <div className='w-1/3 '>
             {/* Title ... */}
-            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Teste</div>
+            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Público</div>
             {/* Description ... */}
-            <div className='p-3 text-sm italic'>Lorem ipsum dolor sit amet, consectetur adipisicpsum itaque sint!</div>
+            <div className='p-3 text-sm italic'></div>
             {/* Date ... */}
-            <div className='p-3 text-red-400 text-sm font-semibold'>24/03</div>
+            <div className='p-3 text-red-400 text-sm font-semibold italic'></div>
             {/* Referência ... */}
-            <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>Apple</div>
+            <div className='p-1 rounded  text-sm font-semibold w-fit'></div>
             </div>
             {/* Center*/}
             <div className='w-1/6 '>
@@ -176,31 +174,31 @@ export default function AboutPage () {
             {/* Right */}
             <div className='w-1/3 '>
             {/* Title ... */}
-            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Teste</div>
+            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Oferta</div>
             {/* Description ... */}
-            <div className='p-3 text-sm italic'>Lorem ipsum dolor sit amet, consectetur adipisicpsum itaque sint!</div>
+            <div className='p-3 text-sm italic'></div>
             {/* Date ... */}
-            <div className='p-3 text-red-400 text-sm font-semibold'>24/03</div>
+            <div className='p-3 text-red-400 text-sm font-semibold'></div>
             {/* Referência ... */}
-            <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>Apple</div>
+            <div className='p-1 rounded  text-sm font-semibold w-fit'></div>
             </div>
             </div>
             <div className='flex justify-between h-48'>
             {/* Left */}
             <div className='w-1/3 '>
             {/* Title ... */}
-            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Teste</div>
+            <div className='bg-white p-3 font-semibold rounded-b-lg rounded-s-lg'>Escala</div>
             {/* Description ... */}
-            <div className='p-3 text-sm italic'>Lorem ipsum dolor sit amet, consectetur adipisicpsum itaque sint!</div>
+            <div className='p-3 text-sm italic'></div>
             {/* Date ... */}
-            <div className='p-3 text-red-400 text-sm font-semibold'>24/03</div>
+            <div className='p-3 text-red-400 text-sm font-semibold'></div>
             {/* Referência ... */}
-            <div className='p-1 rounded bg-white text-sm font-semibold w-fit'>Apple</div>
+            <div className='p-1 rounded  text-sm font-semibold w-fit'></div>
             </div>
             {/* Center*/}
             <div className='w-1/6 '>
             {/* Line */}
-            <div className='w-1 h-full bg-gray-600 rounded relative'>
+            <div className='w-1 h-full  rounded relative'>
             {/* Line Circle */}
             <div className='absolute w-5 h-5 rounded-full ring-4 ring-emerald-500 bg-white -left-2'>
             </div>

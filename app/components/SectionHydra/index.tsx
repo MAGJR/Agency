@@ -63,14 +63,14 @@ export function SectionHydra () {
             transition={{ delay: 0.6 }}
             className="mt-3"
           >
-            Criamos sistemas saas com Inteligência artifical, além de trazer um sistema único para as suas campanhas para alta performace.
+            Criamos sistemas SaaS com Inteligência artifical, além de trazer um sistema único para as suas campanhas para alta performace.
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="bg-emerald-300 p-3 rounded mt-5 hover:bg-emerald-500"
           >
-            <Link href="/about">
+            <Link href="/servicos">
               Saiba mais 
             </Link>
           </motion.button>

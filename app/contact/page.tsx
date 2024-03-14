@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 
 export default function ContactPage () {
-    const text ="Say Hello😊 "
+    const text ="Diga Ola😊 "
     const [sucess, setSucess] = useState(false)
     const [error, setError] = useState(false)
 
@@ -81,7 +81,7 @@ export default function ContactPage () {
             placeholder='e-mail' 
             className='bg-transparent border-b-2 border-b-black outline-none ' 
             />
-            <span>Regards</span>
+            
             <button className='bg-emerald-300 rounded font-semibold text-gray-600 p-4'>Enviar</button>
             {sucess && <span className='text-green-600 font-semibold'> Sua mensagem foi enviada!</span>}
             {error && <span className='text-red-600 font-semibold'> Alguma coisa deu errada, tente novamente</span>}

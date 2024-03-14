@@ -14,7 +14,7 @@ export function SectionFilosofia() {
         <div 
         ref={containerRef}
         className=" 
-        h-screen 
+        h-screen  
         bg-gradient-to-b from-emerald-100 to-blue-100 
         px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-center
         flex flex-col items-center justify-center
