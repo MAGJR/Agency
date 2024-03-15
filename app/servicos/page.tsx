@@ -66,7 +66,7 @@ export default function Servicos () {
           
           {items.map(item => (
             <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
-          <div className='flex flex-col gap-8 text-black'>
+          <div className='flex flex-col gap-2 text-black'>
           <h1 className='text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl' >{item.title}</h1>
           <div className='relative w-80 h-56 md:w-96 md:h-64 lg:w-[700px] lg:h-[350px] xl:w-[600px] xl:h-[420px]'>
           <Image 

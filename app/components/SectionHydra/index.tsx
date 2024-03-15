@@ -33,9 +33,9 @@ export function SectionHydra () {
           <Image
             src={hydrImg}
             alt="Descrição da Imagem"
-            layout="responsive" // Ajusta a imagem para ser responsiva
-            width={700} // Largura da imagem
-            height={475} // Altura da imagem
+            layout="responsive" 
+            width={700} 
+            height={475} 
             objectFit="cover"
           />
         </motion.div>

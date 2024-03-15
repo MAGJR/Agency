@@ -7,6 +7,39 @@ import Link from 'next/link';
 
 
 export function SectionServices () {
+  const item = [
+    {
+      id:1,
+      title: 'Web Sites',
+      description: 'Desenvolvemos sites modernos e funcionais que proporcionam uma experiência de navegação intuitiva e envolvente para seus visitantes'
+    },
+    {
+      id: 2,
+      title: 'Facebook ads',
+      description: 'Aumente suas vendas e a visibilidade da sua marca com nossas estratégias de marketing no Facebook e Instagram'
+    },
+    {
+      id:3,
+      title: 'Google ads',
+      description: 'Apareça nas primeiras posições do Google e aumente a visibilidade da sua marca com nossas estratégias de SEO'
+    },
+    {
+      id:4,
+      title: 'SEO',
+      description: 'Apareça nas primeiras posições do Google e aumente a visibilidade da sua marca com nossas estratégias de SEO'
+    },
+    {
+      id:5,
+      title: 'Segurança Digital',
+      description: 'Proteja seu site e seus dados com nossas soluções de segurança digital'
+    },
+    {
+      id:6,
+      title: 'Criação de Software',
+      description: 'Desenvolvemos softwares personalizados para atender as necessidades do seu negócio'
+    }
+    
+  ]
   
     return (
        <div className='
@@ -16,45 +49,20 @@ export function SectionServices () {
         <h1 className='items-center justify-center text-center mb-6 text-6xl'>Serviços</h1>
         <div className="grid md:grid-cols-3 gap-8">
       
-      {/* CARD 1*/}
-      <motion.div
-      whileHover={{scale: 1.05}}
-      transition={{type: "spring", stiffness: 300}} 
-      className=
-      "bg-gradient-to-bl from-blue-100 to-emerald-50 rounded-lg p-6"
-      >
-        <div 
-        
-        className="flex items-center mb-4">
-          <img src="path_to_your_web_icon" alt="Web Sites" className="h-8 w-8" />
-          <h3 className="text-xl font-semibold ml-3">Web Sites</h3>
-        </div>
-        <p>Desenvolvemos sites modernos e funcionais que proporcionam uma experiência de navegação intuitiva e envolvente para seus visitantes</p>
-      </motion.div>
-
-     {/* CARD 2 */}
-      <motion.div 
-      whileHover={{scale: 1.05}}
-      transition={{type: "spring", stiffness: 300}}
-      className="bg-gradient-to-bl from-blue-100 to-emerald-50 rounded-lg p-6">
-        <div className="flex items-center mb-4">
-          <img src="path_to_your_marketing_icon" alt="Marketing One Off" className="h-8 w-8" />
-          <h3 className="text-xl font-semibold ml-3">Marketing</h3>
-        </div>
-        <p>Oferecemos soluções completas de marketing digital, incluindo estratégias online </p>
-      </motion.div>
-
-      {/* CARD 3 */}
-      <motion.div 
-      whileHover={{scale: 1.05}}
-      transition={{type: "spring", stiffness: 300}}
-      className="bg-gradient-to-bl from-blue-100 to-emerald-50 rounded-lg p-6">
-        <div className="flex items-center mb-4">
-          <img src="path_to_your_social_media_icon" alt="Social Media" className="h-8 w-8" />
-          <h3 className="text-xl font-semibold ml-3">Social Media</h3>
-        </div>
-        <p>As mídias sociais são ferramentas importantes para aumentar a visibilidade da sua marca e se comunicar com seus clientes...</p>
-      </motion.div>
+      {item.map((items) => (
+        <motion.div
+        key={items.id} 
+        whileHover={{scale: 1.05}}
+        transition={{type: "spring", stiffness: 300}}
+        className="bg-gradient-to-bl from-blue-100 to-emerald-50 rounded-lg p-6">
+          <div className="flex items-center mb-4">
+              
+            <h3 className="text-xl font-semibold ml-3">{items.title}</h3>
+          </div>
+          <p>{items.description}</p>
+        </motion.div>
+      ))}
+     
     </div>
     <div className='flex items-center justify-center mt-10'>
       <Link href='/servicos'>

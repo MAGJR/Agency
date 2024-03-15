@@ -5,6 +5,42 @@ import { useRef } from 'react'
 
 export default function AboutPage () {
     const containerRef = useRef<HTMLDivElement>(null)
+    const items = [
+      {
+        id:1,
+        title: 'Facebook ads',
+        
+      },
+      {
+        id:2,
+        title: 'Google ads',
+      },
+      {
+        id:3,
+        title: 'Tiktok ads'
+      },
+      {
+        id:4,
+        title: 'Criação de site'
+      },
+      {
+        id:5,
+        title: 'Criação de sistemas'
+      },
+      {
+        id: 6,
+        title: 'Proteção de dados'
+      },
+      {
+        id: 7,
+        title: 'Registro de Marca'
+      }, 
+      {
+        id:8,
+        title: 'Analytics'
+      }
+      
+    ]
     
     const {scrollYProgress} =useScroll({container:containerRef})
 
@@ -73,17 +109,20 @@ export default function AboutPage () {
             <div className='flex flex-col gap-12 justify-center' ref={skillRef}>
             {/* TITULO DE HABILIDADES  */}
             <motion.h1 
-            initial={{x:"-300px"}} 
+            initial={{x:"-500px"}} 
             animate={isSkillRefInView ? {x:0} : {}}
             transition={{delay:0.2}}
-            className='font-bold text-2xl'>Provas Sociais</motion.h1>
+            className='font-bold text-2xl'>Nossa especialidade</motion.h1>
             {/* SKILL LIST  */}
             <motion.div 
-            initial={{x:"-300px"}} 
+            initial={{x:"-500px"}} 
             animate={isSkillRefInView ? {x:0} : {}} 
             transition={{delay:0.4}}
             className=' flex gap-4 flex-wrap'>
-            <div className='rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>bla bla</div>
+              {items.map((item) => (
+                <div key={item.id} className='rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black'>{item.title}</div>
+              ))}
+            
             </motion.div>
             {/* SKILL SCROLL SVG  */}
             
@@ -114,7 +153,7 @@ export default function AboutPage () {
             {/* Experiência CONTAINER */}
             <motion.div className='flex flex-col gap-12 justify-center pb-48 ' ref={experienceRef}>
             <motion.h1 
-            initial={{x:"-300px"}} 
+            initial={{x:"-500px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}} 
             transition={{delay:0.2}} 
             className='font-bold text-2xl'>
@@ -122,11 +161,11 @@ export default function AboutPage () {
             </motion.h1>
             {/* Experiência List */}
             <motion.div  
-            initial={{x:"-300px"}} 
+            initial={{x:"-500px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}}  className=''>
             {/* Experiência List item*/}
             <motion.div 
-            initial={{x:"-300px"}} 
+            initial={{x:"-500px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}}
             className='flex justify-between h-48 lg:h-64'>
             {/* Left */}
