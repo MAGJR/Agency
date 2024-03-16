@@ -40,20 +40,22 @@ export default function Home() {
 <p className="">É hora de fazer valer seu orçamento de publicidade, expandir seus negócios e aumentar suas vendas.</p>
     {/* Button */}
    <div className="lg:w-full flex gap-4" >
-   <Link href='/servicos'>
+   <Link href='/equipe'>
     <motion.button 
     whileHover={{ scale: 1.05 }}
     transition={{ type: "spring", stiffness: 300 }}
-    className="p-4 rounded-lg ring-1 ring-emerald-300 bg-emerald-300 text-back" >
-     <span className="font-bold">Veja nosso Trabalho</span> 
+    className="p-4 rounded-lg ring-1 ring-emerald-300 bg-emerald-300 text-black" >
+     <span className="font-bold">Conheça	sobre nós</span> 
      
     
     </motion.button>
     </Link>
+    <Link href='/contato'>
     <motion.button 
     whileHover={{ scale: 1.05 }}
     transition={{ type: "spring", stiffness: 300 }}
     className="p-4 rounded-lg ring-1 ring-black bg-white text-black">Contate</motion.button>
+    </Link>
    </div>
    
    <div className="h-screen w-screen flex items-center justify-center ">

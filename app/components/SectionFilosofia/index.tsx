@@ -7,6 +7,7 @@ import { useRef } from "react"
 import { FlagIcon } from "../icon/flag"
 import { ResultsIcon } from "../icon/results"
 import { CampaingIcon } from "../icon/campaings"
+import Link from "next/link"
 
 export function SectionFilosofia() {
   const containerRef = useRef<HTMLDivElement>(null)  
@@ -67,13 +68,18 @@ export function SectionFilosofia() {
               </div>
               <h3 className="text-lg font-semibold text-center mb-2">{item.title}</h3>
               <p className="text-gray-600 text-center">{item.description}</p>
+              
             </motion.div> 
-            ))}
-        
-
-        
-
+            ))} 
         </div>
+        <Link href='/sobre'>
+        <motion.button
+        whileHover={{scale: 1.1}}
+        className="bg-emerald-300 p-3 rounded mt-5
+         hover:bg-emerald-500 font-bold"
+         >Conheça sobre nós
+         </motion.button>
+         </Link>
         </div>
         </div>
     )

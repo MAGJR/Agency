@@ -109,13 +109,13 @@ export default function AboutPage () {
             <div className='flex flex-col gap-12 justify-center' ref={skillRef}>
             {/* TITULO DE HABILIDADES  */}
             <motion.h1 
-            initial={{x:"-500px"}} 
+            initial={{x:"-600px"}} 
             animate={isSkillRefInView ? {x:0} : {}}
             transition={{delay:0.2}}
             className='font-bold text-2xl'>Nossa especialidade</motion.h1>
             {/* SKILL LIST  */}
             <motion.div 
-            initial={{x:"-500px"}} 
+            initial={{x:"-900px"}} 
             animate={isSkillRefInView ? {x:0} : {}} 
             transition={{delay:0.4}}
             className=' flex gap-4 flex-wrap'>
@@ -153,7 +153,7 @@ export default function AboutPage () {
             {/* Experiência CONTAINER */}
             <motion.div className='flex flex-col gap-12 justify-center pb-48 ' ref={experienceRef}>
             <motion.h1 
-            initial={{x:"-500px"}} 
+            initial={{x:"-900px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}} 
             transition={{delay:0.2}} 
             className='font-bold text-2xl'>
@@ -161,11 +161,11 @@ export default function AboutPage () {
             </motion.h1>
             {/* Experiência List */}
             <motion.div  
-            initial={{x:"-500px"}} 
+            initial={{x:"-900px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}}  className=''>
             {/* Experiência List item*/}
             <motion.div 
-            initial={{x:"-500px"}} 
+            initial={{x:"-900px"}} 
             animate={isExperienceRefInView ? {x:"0"} : {}}
             className='flex justify-between h-48 lg:h-64'>
             {/* Left */}

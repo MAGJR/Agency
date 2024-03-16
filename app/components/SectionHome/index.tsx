@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion'
+import Link from 'next/link'
 import { useRef } from 'react'
 
 export function SectionHome () {
@@ -44,13 +45,16 @@ export function SectionHome () {
           Somos altamente especializados no que fazemos. Além de criar Sofwares, sistemas e criação de sites.
           Somos uma Agência de Marketing, focada em conhecer o segmento da sua empresa, bem como a regra do seu negócio, seus concorrentes e suas necessidades 
         </motion.p>
+        <Link href='/contato'>
         <motion.button 
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300 }}
         className="
-        bg-emerald-300 p-3 rounded mt-5 hover:bg-emerald-500">
+        bg-emerald-300 p-3 rounded mt-5 hover:bg-emerald-500 font-bold">
           Contate-nos
+          
         </motion.button>
+        </Link>
         <div className="flex items-center mt-4">
           <div className="flex lg:ml-80 mt-10">
             {/* */}
