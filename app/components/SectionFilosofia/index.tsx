@@ -72,7 +72,7 @@ export function SectionFilosofia() {
             </motion.div> 
             ))} 
         </div>
-        <Link href='/sobre'>
+        <Link href='/equipe'>
         <motion.button
         whileHover={{scale: 1.1}}
         className="bg-emerald-300 p-3 rounded mt-5

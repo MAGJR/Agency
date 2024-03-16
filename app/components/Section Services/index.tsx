@@ -65,11 +65,11 @@ export function SectionServices () {
      
     </div>
     <div className='flex items-center justify-center mt-10'>
-      <Link href='/servicos'>
+      <Link href='/sobre'>
       <motion.button
       whileHover={{scale: 1.05}}
       transition={{ type: "spring", stiffness: 300 }}
-      className='bg-emerald-300 rounded-lg ring-1 font-bold ring-emerald-300 text-black p-4 py-3'>Ver nossos trabalhos
+      className='bg-emerald-300 rounded-lg ring-1 font-bold ring-emerald-300 text-black p-4 py-3'>Conheça sobre nós
       </motion.button>
       </Link>
     </div>
