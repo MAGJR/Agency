@@ -9,9 +9,9 @@ import {motion} from 'framer-motion'
 
     const links= [
     {url: '/', title: "Home"},
-    {url: '/about', title: "About"},
-    {url: '/servicos', title: "Servicos"},
-    {url: '/contact', title: "contact"},
+    {url: '/sobre', title: "Sobre"},
+    {url: '/equipe', title: "Equipe"},
+    {url: '/contato', title: "Contato"},
     
 ]
 export function NavBar () {

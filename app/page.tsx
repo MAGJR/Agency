@@ -31,11 +31,11 @@ export default function Home() {
    {/* TEXT CONTAINER */}
    </div>
  
-   <div className="h-1/2 mt-5  lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center ">
+   <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center ">
     {/* TITLE */}
-    <h1 className="text-4xl md:text-4xl font-bold ">Hydra Digital</h1>
+    <h1 className="flex text-4xl md:text-4xl  font-bold mt-10 ">Hydra Digital</h1>
     {/* DESC */}
-    <p className=""> Pare de desperdiçar tempo e dinheiro em campanhas publicitárias defeituosas e ineficazes.</p>
+    <p className="text-lg lg:text-xl"> Pare de desperdiçar tempo e dinheiro em campanhas publicitárias defeituosas e ineficazes.</p>
 
 <p className="">É hora de fazer valer seu orçamento de publicidade, expandir seus negócios e aumentar suas vendas.</p>
     {/* Button */}
