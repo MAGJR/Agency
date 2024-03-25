@@ -17,12 +17,12 @@ export default function Home() {
   return (
     
     <motion.div
-    className="h-full w-full"
+    className="h-full w-full "
     initial={{ y: "-100vh" }}
     animate={{ y: "0%" }}
     transition={{ duration: 1 }}
   >
-    <div className="h-full flex lg:flex-row flex-col px-4 sm:px-8 md:px-12">
+    <div className="h-full flex lg:flex-row flex-col px-4 sm:px-8 md:px-12 ">
       <div className="h-1/2 lg:h-full lg:w-1/2 relative">
         <Image src={HomeImg} alt="Home image" fill className="object-contain" />
       </div>

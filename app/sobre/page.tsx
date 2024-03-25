@@ -59,7 +59,7 @@ export default function AboutPage () {
         >
             {/* CONTAINER */}
             <div className="
-            h-full overflow-scroll overflow-x-hidden lg:flex" 
+            h-full overflow-scroll overflow-x-hidden lg:flex " 
             
             ref={containerRef}>
             {/* TEXT CONTAINER */}
@@ -257,7 +257,7 @@ export default function AboutPage () {
             </div>
             {/* SVG CONTAINER */}
             
-            <div className='hidden lg:block sticky top-0 z-30 w-1/3 xl:1/2 lg:ml-60'>
+            <div className='hidden lg:block sticky top-0 z-30 w-1/3 xl:1/2 lg:ml-60 ml-1'>
 
             <Brain scrollYProgress={scrollYProgress}></Brain>
             </div>

@@ -19,6 +19,7 @@ export function TransitionProvider ({children}:TransitionProviderProps) {
             className="
             w-screen 
             h-screen 
+            scrollbar-
             bg-gradient-to-b
              text-black
              from-emerald-100
