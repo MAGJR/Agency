@@ -27,7 +27,7 @@ export default function Home() {
         <Image src={HomeImg} alt="Home image" fill className="object-contain" />
       </div>
       <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
-        <h1 className="text-4xl font-bold mt-10">Hydra Digital</h1>
+        <h1 className="text-lg font-bold mt-10">Hydra Marketing</h1>
         <p className="text-lg lg:text-xl">
           Pare de desperdiçar tempo e dinheiro em campanhas publicitárias defeituosas e ineficazes.
         </p>
