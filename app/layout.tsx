@@ -5,7 +5,7 @@ import { TransitionProvider } from "./components/transitionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Agency ",
+  title: "Hydra",
   description: "O melhor site de Marketing Digital",
 };
 export default function RootLayout({
