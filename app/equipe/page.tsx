@@ -103,7 +103,7 @@ export default function Servicos () {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Hydra-Digital hydrinha es as Designer
+                Softwares * TráfegoPago * Sites * funil*
               </textPath>
             </text>
           </motion.svg>
