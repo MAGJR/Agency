@@ -1,17 +1,18 @@
 "use client"
 import Image from "next/image";
 import HomeImg from '../public/Home.png'
-import {motion, useInView} from 'framer-motion'
-import { SectionHome } from "./components/SectionHome";
-import { SectionFilosofia } from "./components/SectionFilosofia";
-import { SectionHydra } from "./components/SectionHydra";
-import { SectionServices } from "./components/Section Services";
-import { useRef } from "react";
-import hydrImg from '../public/hydra.png'
 import Link from "next/link";
+
+import { useRef } from "react";
 import { FlagIcon } from "./components/icon/flag";
-import { CampaingIcon } from "./components/icon/campaings";
+import { SectionHome } from "./components/SectionHome";
 import { ResultsIcon } from "./components/icon/results";
+import { SectionHydra } from "./components/SectionHydra";
+import { CampaingIcon } from "./components/icon/campaings";
+import { SectionServices } from "./components/Section Services";
+import { SectionFilosofia } from "./components/SectionFilosofia";
+import {motion, useInView} from 'framer-motion'
+
 export default function Home() {
  const containerRef = useRef<HTMLDivElement>(null);
  const descriptionRef = useRef<HTMLDivElement>(null);

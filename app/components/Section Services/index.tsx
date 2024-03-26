@@ -43,8 +43,7 @@ export function SectionServices () {
   
     return (
        <div className='
-       h-full 
-       mt-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 bg-white'>
+       h-full w-full mt-10 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 bg-white '>
         <div className="container mx-auto px-4">
         <h1 className='items-center justify-center text-center mb-6 text-6xl'>Serviços</h1>
         <div className="grid md:grid-cols-3 gap-8">
@@ -60,21 +59,28 @@ export function SectionServices () {
             <h3 className="text-xl font-semibold ml-3">{items.title}</h3>
           </div>
           <p>{items.description}</p>
+          
         </motion.div>
+       
       ))}
      
+
     </div>
     <div className='flex items-center justify-center mt-10'>
-      <Link href='/sobre'>
+     <Link href='/sobre'>
       <motion.button
       whileHover={{scale: 1.05}}
       transition={{ type: "spring", stiffness: 300 }}
       className='bg-emerald-300 rounded-lg ring-1 font-bold ring-emerald-300 text-black p-4 py-3'>Conheça sobre nós
       </motion.button>
       </Link>
+      </div>
+
+    <div className='flex  items-center justify-center mt-10 '>
+      
     </div>
   </div>
-       </div>
+  </div>
       );
     
 }

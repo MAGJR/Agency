@@ -81,7 +81,7 @@ export function SectionHydra () {
             transition={{ type: "spring", stiffness: 300 }}
             className="bg-white p-3 rounded mt-5 font-bold"
           >
-            <Link href="/contate">
+            <Link href="/contato">
               contate 
             </Link>
           </motion.button>
