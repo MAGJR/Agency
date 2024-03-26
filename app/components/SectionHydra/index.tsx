@@ -15,7 +15,7 @@ export function SectionHydra () {
     return (
       <div
         className="
-          bg-gradient-to-b text-black from-blue-100 to-emerald-100
+          
           flex flex-col lg:flex-row
           items-center justify-center
           px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48

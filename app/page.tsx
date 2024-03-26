@@ -7,22 +7,47 @@ import { SectionFilosofia } from "./components/SectionFilosofia";
 import { SectionHydra } from "./components/SectionHydra";
 import { SectionServices } from "./components/Section Services";
 import { useRef } from "react";
+import hydrImg from '../public/hydra.png'
 import Link from "next/link";
+import { FlagIcon } from "./components/icon/flag";
+import { CampaingIcon } from "./components/icon/campaings";
+import { ResultsIcon } from "./components/icon/results";
 export default function Home() {
  const containerRef = useRef<HTMLDivElement>(null);
  const descriptionRef = useRef<HTMLDivElement>(null);
+
+ const items = [
+  {
+    id:1,
+    title: 'Strategy',
+    description: 'Analisamos a história da sua marca e traçamos uma estratégia que esteja em harmonia com a sua marca.',
+    component: <FlagIcon />
+  },
+  {
+    id:2,
+    title: 'Campaigns',
+    description: 'Criamos, executamos, otimizamos e dimensionamos campanhas que vendem seu produto com eficiência.',
+    component: <CampaingIcon />
+  },
+  {
+    id:3,
+    title: 'Results',
+    description: 'Sempre nos esforçamos para alcançar um ROI de 4x+ - mas muitas vezes entregamos resultados muito além disso.',
+    component: <ResultsIcon />
+  }
+] 
 
  const isDescriptionInView = useInView(descriptionRef, {margin:"-150px"})
 
   return (
     
     <motion.div
-    className="h-full w-full "
+    className="h-full w-full overflow-scroll overflow-x-hidden"
     initial={{ y: "-100vh" }}
     animate={{ y: "0%" }}
     transition={{ duration: 1 }}
   >
-    <div className="h-full flex lg:flex-row flex-col px-4 sm:px-8 md:px-12 ">
+    <div className="h-full flex lg:flex-row flex-col px-4 sm:px-8 md:px-12  ">
       <div className="h-1/2 lg:h-full lg:w-1/2 relative">
         <Image src={HomeImg} alt="Home image" fill className="object-contain" />
       </div>
@@ -56,10 +81,17 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <SectionHome />
-    <SectionFilosofia />
-    <SectionHydra />
-    <SectionServices />
+    <div>
+    </div>
+    <div>
+      <SectionHome/>
+      <SectionFilosofia />
+      <SectionHydra />
+      <SectionServices/>
+    </div>
+      
+    
+    
   </motion.div>
   );
 }

@@ -26,6 +26,7 @@ export function TransitionProvider ({children}:TransitionProviderProps) {
              to-blue-100">
             <motion.div 
             className="
+            scrollbar-thumb-emerald-400
             h-screen
             w-screen 
             fixed

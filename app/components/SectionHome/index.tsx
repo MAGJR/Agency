@@ -9,10 +9,8 @@ export function SectionHome () {
     const isDescriptionRefInView = useInView(descriptionRef, {margin:"1px"})   
     
     return (
-<div className="bg-gradient-to-b
-        text-black
-        from-blue-100
-        to-emerald-100  px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48"
+<div className="
+          px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48"
         ref={containerRef}
         >
       {/* Text container */}
