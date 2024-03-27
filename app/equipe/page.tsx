@@ -14,7 +14,7 @@ const items = [
       imgHeight: 700,
       color: "from-emerald-300 to-blue-300",
       title: "Brenda Mazetto",
-      desc: "Brenda é uma profissional versátil com habilidades excepcionais em marketing e vendas. Sua expertise em criar campanhas comerciais eficazes a torna uma peça fundamental para qualquer equipe buscando maximizar seu alcance no mercado",
+      desc: "Brenda é uma profissional dedicada do setor comercial com uma jornada de quase uma década na área de vendas e marketing.",
       img: BrendaImg,
       link: "",
     },
@@ -68,17 +68,17 @@ export default function Servicos () {
             <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`} key={item.id}>
           <div className='flex flex-col gap-2 text-black'>
           
-          <div className='relative w-80 h-56 md:w-96 md:h-64 lg:w-[700px] lg:h-[350px] xl:w-[600px] xl:h-[420px]'>
+          <div className='relative w-80 h-56 md:w-96 md:h-64 lg:w-[700px] lg:h-[350px] xl:w-[600px] xl:h-[420px] flex items-center justify-center'>
           <Image 
           src={item.img} 
           height={item.imgHeight}
           width={item.imgWidth}
-          className="rounded-full"
+          className="rounded-full "
           alt="" 
           />
           </div>
-          <h1 className='text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl' >{item.title}</h1>
-          <p className='w-80 md:w96 lg:w-[600px] lg:text-lg xl:w-[600px] lg:mb-10'>{item.desc}</p>
+          <h1 className='text-xl font-bold md:text-4xl lg:text-4xl xl:text-8xl text-center' >{item.title}</h1>
+          <p className='w-80 md:w96 lg:w-[600px] lg:text-lg xl:w-[600px] lg:mb-10 text-center'>{item.desc}</p>
           <Link href={item.link} className='flex justify-end'>
             </Link>
           </div>

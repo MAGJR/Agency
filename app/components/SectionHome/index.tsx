@@ -41,7 +41,7 @@ export function SectionHome () {
           
           Veiculamos anúncios em várias plataformas, incluindo Facebook, Instagram, TikTok, Google e Youtube.
           Somos altamente especializados no que fazemos. Além de criar Sofwares, sistemas e criação de sites.
-          Somos uma Agência de Marketing, focada em conhecer o segmento da sua empresa, bem como a regra do seu negócio, seus concorrentes e suas necessidades 
+          Somos uma Agência de Marketing, focada em conhecer o segmento da sua empresa, bem como a regra do seu negócio, seus concorrentes e suas necessidades. 
         </motion.p>
           <div className='flex items-center justify-center'>
         <Link href='/contato'>

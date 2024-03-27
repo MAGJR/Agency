@@ -14,19 +14,19 @@ export function SectionFilosofia() {
   const items = [
     {
       id:1,
-      title: 'Strategy',
+      title: 'Estratégia',
       description: 'Analisamos a história da sua marca e traçamos uma estratégia que esteja em harmonia com a sua marca.',
       component: <FlagIcon />
     },
     {
       id:2,
-      title: 'Campaigns',
+      title: 'Campanhas',
       description: 'Criamos, executamos, otimizamos e dimensionamos campanhas que vendem seu produto com eficiência.',
       component: <CampaingIcon />
     },
     {
       id:3,
-      title: 'Results',
+      title: 'Resultados',
       description: 'Sempre nos esforçamos para alcançar um ROI de 4x+ - mas muitas vezes entregamos resultados muito além disso.',
       component: <ResultsIcon />
     }

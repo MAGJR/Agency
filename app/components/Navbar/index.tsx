@@ -82,7 +82,7 @@ export function NavBar () {
             <div className='md:hidden lg:flex xl:w-1/3 justify-center'>
             <Link href="/" className='text-sm bg-black text-w rounded-md p-1 font-semibold'>
                 <span className='text-white'>Hydra</span>
-                <span className='w-12 h-8 rounded bg-white text-black'>.digital</span>
+                <span className='w-12 h-8 rounded bg-white text-black'>.mkt</span>
             </Link>
             </div>
             {/*Responsive Menu */}

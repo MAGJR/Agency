@@ -53,7 +53,7 @@ export default function Home() {
         <Image src={HomeImg} alt="Home image" fill className="object-contain" />
       </div>
       <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
-        <h1 className="text-lg font-bold mt-10">Hydra Marketing</h1>
+        <h1 className="text-4xl font-bold mt-10 ">Hydra Marketing</h1>
         <p className="text-lg lg:text-xl">
           Pare de desperdiçar tempo e dinheiro em campanhas publicitárias defeituosas e ineficazes.
         </p>
@@ -65,7 +65,7 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="p-4 rounded-lg ring-1 ring-emerald-300 bg-emerald-300 text-black"
+              className="p-4 rounded-lg ring-1 ring-emerald-300 bg-emerald-300 font-bold"
             >
               Conheça sobre nós
             </motion.button>
@@ -74,7 +74,7 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="p-4 rounded-lg ring-1 ring-black bg-white text-black"
+              className="p-4 rounded-lg ring-1 ring-black bg-white font-bold"
             >
               Contate
             </motion.button>
